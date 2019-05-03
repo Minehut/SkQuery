@@ -51,7 +51,7 @@ public class ExprBlockCube extends SimpleExpression<Block> {
     }
 
     @SuppressWarnings("unchecked")
-	@Override
+    @Override
     public boolean init(Expression<?>[] expressions, int i, Kleenean kleenean, SkriptParser.ParseResult parseResult) {
         pos1 = (Expression<Location>) expressions[0];
         pos2 = (Expression<Location>) expressions[1];
@@ -67,7 +67,9 @@ public class ExprBlockCube extends SimpleExpression<Block> {
     public Iterator<Block> iterator(Event e) {
         Location p1 = pos1.getSingle(e);
         Location p2 = pos2.getSingle(e);
-        if(p1 == null || p2 == null) return new EmptyIterator<>();
+        if (p1 == null || p2 == null)
+            return new EmptyIterator<>();
         return new CuboidIterator(p1, p2);
     }
+
 }
