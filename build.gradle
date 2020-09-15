@@ -8,6 +8,7 @@ configurations {
 }
 
 repositories {
+	mavenLocal()
 	mavenCentral()
 	jcenter()
 
@@ -41,8 +42,9 @@ dependencies {
 	implementation (group: 'org.spigotmc', name: 'spigot-api', version: '1.16.1-R0.1-SNAPSHOT')
 
 	//Skript
-	implementation (group: 'com.github.SkriptLang', name: 'Skript', version: '2.4-beta8') {
-		transitive = false
+	implementation (group: 'ch.njol', name: 'skript', version: '2.5-beta2') {
+		exclude (group: 'com.github.marcelo-mason')
+		exclude (group: 'net.milkbowl.vault')
 	}
 
 	shade (group: 'org.json', name: 'json', version: '20200518')
