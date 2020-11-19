@@ -9,9 +9,9 @@ import org.bukkit.event.Event;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
-import com.w00tmast3r.skquery.api.PropertyFrom;
-import com.w00tmast3r.skquery.api.PropertyTo;
-import com.w00tmast3r.skquery.api.UsePropertyPatterns;
+import com.w00tmast3r.skquery.annotations.PropertyFrom;
+import com.w00tmast3r.skquery.annotations.PropertyTo;
+import com.w00tmast3r.skquery.annotations.UsePropertyPatterns;
 
 import java.util.Arrays;
 

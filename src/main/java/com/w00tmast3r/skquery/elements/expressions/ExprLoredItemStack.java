@@ -11,7 +11,7 @@ import org.bukkit.Material;
 import org.bukkit.event.Event;
 import org.bukkit.inventory.meta.ItemMeta;
 
-import com.w00tmast3r.skquery.api.Patterns;
+import com.w00tmast3r.skquery.annotations.Patterns;
 
 import java.util.Arrays;
 
